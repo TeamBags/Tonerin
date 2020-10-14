@@ -1,0 +1,23 @@
+section.recomend.block
+  .container
+    .recomend__content
+      .recomend__doctor
+        picture
+          source(media="(max-width:639px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==")
+          source(srcset="img/specialist.webp" type="image/webp")
+          img.recomend__doctor--img(src="img/specialist.png", alt="")
+      .recomend__info
+        h2.title.recomend__title Специалисты рекомендуют 
+          span.accent Тонерин
+        p.bg-text «Новое слово в области борьбы с&nbsp;гипертонией»
+        p.content-text Раньше, чтобы справиться с&nbsp;гипертонией, приходилось проходить длительный курс, который не всегда давал хорошие результаты. Но теперь, чтобы привести свои сосуды в&nbsp;норму и&nbsp;тем самым забыть о&nbsp;проблеме повышенного давления, нужно всего одно средство – Тонерин.
+        p.content-text Главный компонент этого средства – <b>Коэнзим Q10, который позволяет омолодить сосуды, очистить их и вернуть им эластичность.</b> А здоровые сосуды – это основа здоровья сердечно-сосудистой системы и&nbsp;здоровья в&nbsp;целом. Опасность инфаркта, инсульта и&nbsp;другие осложнения гипертонии становятся минимальными.
+        .sign
+          .sign__doctor
+            p.sign__doctor--name Виктор Фролов,
+            p.sign__doctor--post кардиолог
+          img.sign__img(src="img/sign1.png", alt="")
+          img.sign__img(src="img/approved.png", alt="")
+section.recomend__action.block
+  .container
+    include action

@@ -1,0 +1,36 @@
+div.form-wrap
+	form(action="/submit", method="POST", class="x_order_form form")
+		h3.form__title Внимание!
+		.form-main
+			p.date-wrap Только сегодня 
+				span.date-0.date-color(data-format="dd month")
+			p.price цена:&nbsp;
+				span.x_price_current 196&nbsp;
+				|  
+				span.x_currency грн
+				span.x_star *
+			div.form__input--wrap
+				label.form__input--icon
+					img(src="img/icon_name.png", alt="")
+				input.form__input(placeholder="Мое имя", type="text", requaired="", name="name")
+			div.form__input--wrap
+				label.form__input--icon
+					img(src="img/icon_phone.png", alt="")
+				input.form__input(placeholder="Мой телефон", type="tel", requaired="", name="phone")
+			button.btn.form__btn Оформить заказ
+			p.footnote *при оформлении заказа
+		.online-block
+			.online-wrapper
+				.online-people.online-1.active
+					img(src="img/eye.png" alt="online")
+					p Сейчас на сайте 
+						span.text-bold.online-dynamic.online-dynamic-1 27	
+						|	 человек
+				.online-people.online-2
+					img(src="img/eye.png" alt="online")
+					p <span class='text-bold online-dynamic online-dynamic-2'>116</span> продаж за последний час
+	p.last Осталось&nbsp;
+		span.lastpack 80
+		| &nbsp;упаковок
+
+

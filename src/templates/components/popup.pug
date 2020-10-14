@@ -1,0 +1,19 @@
+.ever-popup-build
+	.my-popup(id="cloneThis")
+		.my-popup__wrap
+			.my-popup__left
+				h2.promo__title.title Тонерин
+				h3.promo__subtitle Омоложение сосудов и&nbsp;стабилизация давления
+				.my-popup__pack.animation-pack
+					picture
+						<source media="(max-width: 999px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+						source(srcset="img/prod.webp" type="image/webp")
+						img(src="img/prod.png" alt="product")
+					.medal.animation-medal
+						picture
+							img(src="img/quality3.png", alt="image")
+				.promo__quality--item.promo__au
+					img(src="img/quality1.png", alt="prod", class="quality")
+					span Рекомендован Российским кардиологическим обществом
+			.my-popup__right
+				include form

@@ -1,0 +1,250 @@
+.header {
+  box-shadow: 2px 4px 4px rgba(3, 3, 3, 0.05);
+  background-color: #ffffff;
+  padding: 10px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    display: none;
+  }
+
+  .timer {
+    display: none;
+  }
+  .hours,
+  .minutes,
+  .seconds {
+    padding: 3.5px 10.7px;
+    border-color: #fff;
+  }
+  &__button {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+    border-radius: 30px;
+    border-width: 2px;
+    max-width: 150px;
+    padding: 9.5px 0 !important;
+    @include rm(480) {
+      font-size: 16px;
+      max-width: 155px;
+    }
+    &:hover {
+      border-width: 2px;
+    }
+  }
+  &__logo {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    &--img {
+      margin-right: 5px;
+      @include rm(480) {
+        margin-right: 8px;
+      }
+      @include rm(1220) {
+        margin-right: 13px;
+      }
+    }
+    img {
+      width: 44px;
+      @include rm(480) {
+        width: auto;
+      }
+    }
+    &--name {
+      color: #df3a08;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1;
+      @include rm(480) {
+        font-size: 22px;
+      }
+      @include rm(1220) {
+        font-size: 26px;
+      }
+      br {
+        @include rm(1024) {
+          display: none;
+        }
+      }
+    }
+
+    @include rm(1220) {
+      margin-right: 30px;
+    }
+  }
+  .timer__text {
+    font-size: 14px;
+    max-width: 110px;
+		margin-right: 12px;
+		@include rm(768) {
+      margin-right: 5px;
+		}
+		@include rm(1024) {
+      margin-right: 12px;
+    }
+    @include rm(1220) {
+      margin-right: 15px;
+    }
+  }
+}
+.timer__dots {
+  color: #000000;
+}
+.header__timer {
+  display: none;
+  align-items: center;
+}
+
+@include rm(480) {
+  .header {
+    &__button {
+      max-width: 157px;
+      font-size: 16px;
+      padding: 12.5px 0 !important;
+      margin-bottom: 0;
+      height: auto;
+    }
+  }
+}
+
+@include rm(640) {
+  .header {
+    padding: 10px 0 14px;
+    &__wrapper {
+      justify-content: space-between;
+    }
+    .timer {
+      display: flex;
+      flex-direction: column;
+
+      .timer__text {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .timer .hours,
+  .timer .minutes,
+  .timer .seconds {
+    padding: 7px 7px;
+    font-size: 18px;
+  }
+}
+
+@include rm(768) {
+  .header {
+    .timer {
+      display: flex;
+      flex-direction: row;
+
+      .timer__text {
+        margin-bottom: 0;
+        margin-right: 15px;
+        max-width: 120px;
+      }
+    }
+  }
+  .header__timer {
+    display: flex;
+  }
+  .header .timer .timer__text {
+    margin-right: 10px;
+    max-width: 110px;
+  }
+  .header .timer .timer__text {
+    font-size: 14px;
+  }
+}
+
+@include rm(1024) {
+  .header {
+    &__nav {
+      display: flex;
+    }
+  }
+  .header {
+    &__button {
+      max-width: 200px !important;
+    }
+  }
+  .nav__item {
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+
+    &:first-child {
+      margin-right: 15px;
+    }
+
+    &:hover .nav__item-text {
+      border-bottom-color: transparent;
+    }
+
+    &-image {
+      margin-right: 12px;
+    }
+
+    &-text {
+      color: #000;
+      font-size: 16px;
+      line-height: 1;
+      border-bottom: 2px dotted rgb(32, 32, 32);
+    }
+  }
+
+  .header__button {
+    max-width: 175px;
+    padding: 11.5px 0 !important;
+  }
+}
+.header__button {
+  height: auto !important;
+  margin-bottom: 0 !important;
+  padding: 11.5px 0;
+  font-size: 16px !important;
+}
+@include rm(1220) {
+  .header__button {
+    max-width: 200px;
+    padding: 12.5px 0;
+    font-size: 18px !important;
+  }
+  .nav__item-text {
+    font-size: 18px;
+  }
+  .nav__item {
+    padding-right: 34px;
+    border-right: 1px solid #cdcdcd;
+    &:first-child {
+      margin-right: 24px;
+      padding-right: 25px;
+    }
+    &:last-child {
+      border-right: none;
+      padding-right: 22px;
+    }
+  }
+  .timer .hours,
+  .timer .minutes,
+  .timer .seconds {
+    padding: 9px;
+    font-size: 24px;
+  }
+  .nav__item {
+    &-image {
+      margin-right: 15px;
+    }
+  }
+  .header .timer .timer__text {
+    font-size: 16px;
+  }
+  .header .timer .timer__text {
+    margin-right: 15px;
+    max-width: 120px;
+  }
+}

@@ -1,0 +1,244 @@
+.form {
+  box-shadow: 2px 4px 20px rgba(3, 3, 3, 0.03);
+  border: 2px solid #e45326;
+
+  width: 270px;
+  background-color: #e45326;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17px;
+  position: relative;
+  &-main {
+    padding: 0 25px;
+    background-color: #fff;
+    padding-top: 44px;
+  }
+
+  &__title {
+    text-align: center;
+    color: #fff;
+    background-color: #e45326;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    padding-top: 13px;
+    position: relative;
+    padding-bottom: 2px;
+    z-index: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 135px 0 135px;
+      border-color: #e45226 transparent transparent transparent;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -37px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 32px;
+      background: url(../img/form-shadow.png) no-repeat center;
+      z-index: -1;
+    }
+  }
+
+  &__input {
+    background-color: #fff;
+    border: 1px solid #e4e2e2;
+    border-radius: 5px;
+    height: 60px;
+    padding-right: 15px;
+    width: 100%;
+    padding-left: 45px;
+    transition: 0.3s;
+    color: #666666;
+    font-size: 16px;
+    box-shadow: 2px 4px 4px rgba(3, 3, 3, 0.05);
+    border-radius: 30px;
+    &--icon {
+      position: absolute;
+      left: 17px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: none;
+    }
+    &--wrap {
+      margin-bottom: 13px;
+      position: relative;
+    }
+  }
+}
+.date-color {
+  color: #df3a08;
+  font-weight: 700;
+}
+// .date-color,
+// .lastpack {
+//   background-color: #ed6e6f;
+//   display: inline-block;
+//   padding: 5px;
+//   color: #fff;
+//   font-weight: 700;
+//   border-radius: 3px;
+//   -webkit-border-radius: 3px;
+//   -moz-border-radius: 3px;
+//   -ms-border-radius: 3px;
+//   -o-border-radius: 3px;
+// }
+// .date-color{
+// 	margin-top: 5px;
+// 	font-size: 18px;
+// }
+.price {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 7px;
+  color: #222222;
+  .x_currency {
+    position: relative;
+    left: -5px;
+  }
+}
+
+.x_price_current {
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: -2.4px;
+}
+.date-wrap {
+  margin-bottom: 1px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.lastpeople {
+  color: #ed6e6f;
+  font-weight: 900;
+  font-size: 16px;
+}
+.last {
+  font-size: 16px;
+  color: #222;
+  @include rm(1220) {
+    font-size: 18px;
+  }
+  .lastpack {
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: #e45326;
+    color: #ffffff;
+    padding: 1px 5px;
+  }
+}
+.form__btn {
+  margin-top: 20px;
+}
+.btn {
+  border-radius: 35px;
+  background: linear-gradient(
+    to left,
+    #649f36 0%,
+    #74b444 50%,
+    #75b34e 51%,
+    #659e40 100%
+  );
+  width: 100%;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 18.5px 0;
+  background-size: 200% 100%;
+  background-position: 100% 100%;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-position: 0 0;
+  }
+}
+.footnote {
+  color: #666666;
+  text-align: center;
+  padding-bottom: 12px;
+  font-size: 14px;
+  margin-top: 17px;
+  border-bottom: 1px solid#d5d5d5;
+}
+.visitors {
+  padding: 9px 0 14px;
+  text-align: center;
+  font-size: 13px;
+}
+.visitors * {
+  display: inline-block;
+}
+.last {
+  text-align: center;
+}
+.eye {
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+.online-people,
+.online-sold {
+  display: flex;
+  align-items: center;
+  img {
+    transition: 0.4s;
+  }
+  p {
+    color: #626262;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 8px;
+    transition: 0.2s;
+  }
+}
+.online-dynamic {
+  color: #e45326;
+  font-weight: bold;
+}
+.online-wrapper {
+  overflow: hidden;
+  height: 15px;
+  display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.online-block {
+  background-color: #fff;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.online-people{
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: .3s;
+	font-size: 12px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.online-people.active{
+	max-height: 200px;
+	opacity: 1;
+	font-size: 14px;
+}

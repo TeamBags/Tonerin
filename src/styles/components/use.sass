@@ -1,0 +1,151 @@
+.use
+	overflow: hidden
+	+rm(1024)
+		padding-bottom: 0 !important
+	+rm(1220)
+		padding: 80px 0 60px
+	&::before
+		display: none !important
+		+rm(1600)
+			display: block !important
+			right: -200px
+		+rm(2100)
+			right: 0
+	&::after
+		+rm(1400)
+			left: -900px !important
+		+rm(1600)
+			left: -800px !important
+		+rm(1833)
+			left: -550px !important
+	&__title
+		margin-bottom: 15px
+		+rm(480)
+			margin-bottom: 25px
+		+rm(768)
+			margin-bottom: 40px
+		+rm(1220)
+			margin-bottom: 50px
+	&__content
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: 25px
+		+rm(1024)
+			align-items: center
+			padding-bottom: 30px
+			margin-bottom: 30px
+			border-bottom: 1px solid #d6d3d3
+		+rm(1220)
+			align-items: flex-start
+			padding-bottom: 70px
+	&__box
+		max-width: 300px
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 15px
+		+rm(480)
+			max-width: 229px
+			margin-bottom: 30px
+		+rm(768)
+			max-width: 100%
+			width: 49%
+			margin-bottom: 20px
+		+rm(1024)
+			max-width: 285px
+			width: 100%
+		+rm(1220)
+			margin-bottom: 0px
+			max-width: 280px
+			margin-top: 35px
+	&-box__icon
+		width: 122px
+		height: 122px
+		border: 1px solid #dddddd
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 50%
+		position: relative
+		margin-bottom: 10px
+		position: relative
+		z-index: 0
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 90%
+			height: 90%
+			border: 3px solid #dddddd
+			background-color: #ffffff
+			z-index: -1
+		+rm(1220)
+			margin-bottom: 15px
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			border: 3px solid #ddd
+			transform: translate(-50%,-50%)
+			background-color: #fff
+			width: 90%
+			height: 90%
+			z-index: -1
+			border-radius: 50%
+	&-box__title
+		text-align: center
+		color: #000
+		font-size: 18px
+		+rm(768)
+			max-width: 330px
+			font-size: 20px
+		br
+			display: none
+	&__pack
+		order: 1
+		max-width: 320px
+		transition: .8s
+		+rm(480)
+			max-width: 320px
+		+rm(768)
+			max-width: 400px
+		+rm(1024)
+			order: inherit
+			position: relative
+			margin-right: -11px
+			margin-left: 15px
+		+rm(1220)
+			max-width: 469px
+			position: relative
+			
+		&:before, &::after
+			+rm(1024)
+				content: ''
+				position: absolute
+				top: 29%
+				transform: translateY(-50%)
+				height: 1px
+				width: 0px
+				height: 1px
+				transition: .5s
+				background-color: #d5d5d5
+			+rm(1220)
+				top: 38%
+				transform: none
+		&:before
+			+rm(1024)
+				left: -80px
+			+rm(1220)
+				left: -75px
+		&::after
+			+rm(1024)
+				right: -54px
+			+rm(1220)
+				right: -47px
+.use__pack.active
+	&::after, &:before
+		width: 92px

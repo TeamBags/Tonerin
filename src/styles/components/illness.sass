@@ -1,0 +1,390 @@
+.illness
+	+rm(1220)
+		padding: 80px 0
+	&__title
+		margin-bottom: 20px
+		+rm(1024)
+			margin-bottom: 40px
+		+rm(1220)
+			margin-bottom: 64px
+	&__content
+		+rm(1024)
+			position: relative
+	&__box
+		&.active
+			.illness-box__title--icon
+				fill: #e45326
+			.illness-box__title
+				border: 2px solid #e45326
+				margin-bottom: 10px
+			.illness__item
+				max-height: 1000px
+			.illness-box__title::after
+				border-color: #e45326 transparent transparent transparent
+				transform: translateY(-50%) rotate(180deg)
+				+rm(1024)
+					border: none
+					transform: translateY(-50%)
+					opacity: 1
+			.illness-box__title::before
+				+rm(1024)
+					opacity: 1
+		&:not(:last-child)
+			margin-bottom: 13px
+			+rm(1220)
+				margin-bottom: 18px
+	&-box__title 
+		color: #222222
+		font-size: 16px
+		font-weight: 400
+		display: flex
+		align-items: center
+		line-height: 1
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.05)
+		border-radius: 5px
+		background-color: #ffffff
+		height: 64px
+		width: 100%
+		max-width: 330px
+		margin-left: auto
+		margin-right: auto
+		padding-left: 18px
+		padding-right: 28px
+		cursor: pointer
+		transition: .5s
+		border: 2px solid #fff
+		position: relative
+		&:hover
+			border: 2px solid #e45326
+		+rm(480)
+			font-size: 18px
+		+rm(640)
+			max-width: 100%
+		+rm(1024)
+			font-size: 18px
+			line-height: 1.01
+			height: 60px
+			max-width: 300px
+			margin-left: 0
+		+rm(1220)
+			max-width: 330px
+			font-size: 20px
+			height: 76px	
+		&--icon
+			margin-right: 15px
+			fill: #c1c1c1
+			transition: .5s
+			+rm(1024)
+				margin-right: 20px
+		&::after
+			content: ''
+			position: absolute
+			right: 15px
+			top: 50%
+			transform: translateY(-50%)
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 5px 5px 0 5px
+			border-color: #c1c1c1 transparent transparent transparent
+			transition: .5s
+			+rm(1024)
+				right: 0
+				border: none
+				width: 16px
+				height: 16px
+				background-color: #e45326
+				border-radius: 50%
+				right: -9px
+				opacity: 0
+				transition: .3s
+				+rm(1220)
+					width: 19px
+					height: 19px
+		&::before
+			+rm(1024)
+				content: ''
+				position: absolute
+				right: -92px
+				top: 50%
+				transform: translateY(-50%)
+				width: 92px
+				height: 1px
+				background-color: #d5d5d5
+				opacity: 0
+				transition: .3s
+		&--icon1
+			max-width: 32px
+		&--icon2
+			max-width: 29px
+		&--icon3
+			max-width: 31px
+		&--icon4
+			max-width: 28px
+		&--icon5
+			max-width: 31px
+		&--icon6
+			max-width: 26px
+	&__item 
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.08)
+		border-radius: 5px
+		background-color: #e45326
+		max-width: 330px
+		margin-left: auto
+		margin-right: auto
+		max-height: 0
+		overflow: hidden
+		transition: .5s
+		+rm(640)
+			max-width: 100%
+			display: flex
+			flex-wrap: wrap
+		+rm(1024)
+			position: absolute
+			right: 0
+			top: 0
+			max-width: 630px
+			z-index: 10
+		+rm(1220)
+			max-width: 770px
+	&-item__img
+		margin-top: 15px
+		margin-right: 15px
+		margin-left: 15px
+		border-radius: 3px
+		border: 3px solid #ffffff
+		background-color: #ffffff
+		margin-bottom: 10px
+		+rm(640)
+			max-width: 320px
+		+rm(768)
+			max-width: 380px
+			margin-right: 25px
+		+rm(1024)
+			max-width: 320px
+			margin-right: 15px
+			margin-top: 30px
+		+rm(1220)
+			max-width: 420px
+			margin-left: 41px
+			margin-top: 43px
+			margin-right: 30px
+			margin-bottom: 18px
+		img 
+			border-radius: 3px
+	&-item__sub
+		padding: 0 15px
+		+rm(640)
+			max-width: 270px
+			width: 100%
+			padding-left: 0
+			padding-top: 15px
+		+rm(1024)
+			padding-top: 30px
+		+rm(1220)
+			max-width: 235px
+			padding-top: 40px
+			padding-right: 0
+
+	&-item__title 
+		color: #ffffff
+		font-size: 24px
+		font-weight: 700
+		line-height: 1.1
+		display: flex
+		align-items: center
+		border-bottom: 1px solid rgba(255, 255, 255, .5)
+		padding-bottom: 10px
+		margin-bottom: 10px
+		+rm(768)
+			padding-bottom: 15px
+			margin-bottom: 20px
+		+rm(1024)
+			font-size: 23px
+		+rm(1220)
+			line-height: 26px
+			padding-bottom: 31px
+			margin-bottom: 28px
+			font-size: 21px
+		&--icon
+			margin-right: 15px
+			fill: #fff
+			max-width: 50px
+			max-height: 60px
+			+rm(1220)
+				margin-right: 15px
+				flex-shrink: 0
+	&-item__info
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		line-height: normal
+		+rm(640)
+			line-height: 24px
+		+rm(1024)
+			line-height: 26px
+		+rm(1220)
+			line-height: 30px
+	&__attention 
+		margin-top: 10px
+		color: #fefefe
+		font-size: 16px
+		font-weight: 700
+		line-height: normal
+		padding: 15px
+		position: relative
+		padding-left: 60px
+		border-top: 1px solid rgba(255, 255, 255, .5)
+		+rm(640)
+			width: 100%
+			font-size: 18px
+			padding-left: 65px
+			width: 100%
+			padding-right: 100px
+		+rm(768)
+			font-size: 22px
+			padding-left: 70px
+		+rm(1024)
+			font-size: 20px
+			padding-left: 65px
+			margin-top: 19px
+			padding-top: 12px;
+			padding-bottom: 16px;
+		+rm(1220)
+			font-size: 24px
+			padding: 11px 100px 15px 103px
+		&::before
+			content: ''
+			position: absolute
+			left: 15px
+			top: 50%
+			transform: translateY(-50%)
+			background: url(../img/illness-att.svg) no-repeat center / contain
+			width: 36px
+			height: 33px
+			+rm(640)
+				width: 39px
+				height: 36px
+			+rm(1220)
+				width: 41px
+				height: 38px
+				left: 41px
+				transform: translateY(-53%)
+	&__prod
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.05)
+		border-radius: 5px
+		border: 2px solid #e45326
+		background-color: #ffffff
+		padding: 15px 
+		max-width: 300px
+		margin-left: auto
+		margin-right: auto
+		+rm(640)
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			max-width: 455px
+			margin-left: auto
+			margin-right: auto
+			padding: 25px 15px 25px
+		+rm(768)
+			max-width: 480px
+		+rm(1024)
+			justify-content: flex-end
+			flex-direction: row
+			flex-wrap: wrap
+			position: relative
+			padding-top: 25px
+			max-width: 100%
+			padding-bottom: 25px
+			padding-right: 25px
+		+rm(1220)
+			padding-right: 50px
+			padding-top: 28px
+			padding-bottom: 33px
+	&-prod__title
+		margin-bottom: 35px
+		+rm(640)
+			margin-right: 0px
+		+rm(768)
+			margin-bottom: 30px
+			margin-right: 0
+		+rm(1024)
+			max-width: 100%
+			margin-bottom: 0
+			text-align: left !important
+		+rm(1220)
+			font-size: 36px !important
+		&--small 
+			margin-top: 5px
+			display: block
+			font-size: 18px
+			line-height: normal
+			font-weight: 400
+			+rm(640)
+				font-size: 20px
+			+rm(1220)
+				font-size: 22px !important
+				text-align: left !important
+				margin-top: 9px
+	&-prod__item
+		max-width: 270px
+		margin: 0 auto 15px
+		position: relative
+		+rm(640)
+			margin-left: 0
+			margin-right: 0
+			max-width: 315px
+		+rm(768)
+			margin-left: auto
+			margin-right: auto
+		+rm(1024)
+			margin-bottom: 0
+			position: absolute
+			left: -26px
+			top: 50%
+			transform: translateY(-50%)
+			margin: 0
+			max-width: 247px
+		+rm(1220)
+			left: -27px
+			transform: translateY(-49%)
+			max-width: 339px
+		&:before
+			content: ''
+			position: absolute
+			width: 96px
+			height: 70px
+			background: url(../img/quality1.webp) no-repeat center / contain
+			top: -24px
+			right: -4px
+			+rm(640)
+				right: -7px
+			+rm(768)
+				width: 86px
+				height: 60px
+			+rm(1024)
+				right: 7px
+				top: -28px
+			+rm(1220)
+				width: 98px
+				height: 78px
+				right: 18px
+				top: -29px
+	&__btn
+		font-size: 22px
+		max-width: 263px
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 0
+		padding: 13.5px 0;
+		+rm(1024)
+			margin-left: 20px
+			margin-right: 0
+		+rm(1220)
+			max-width: 280px
+			margin-left: 53px
+			padding: 18.5px 0;
+.no-webp .illness-prod__item:before
+	background: url(../img/quality1.png) no-repeat center/contain

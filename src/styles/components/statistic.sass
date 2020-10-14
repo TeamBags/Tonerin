@@ -1,0 +1,214 @@
+.statistic
+	+rm(1220)
+		padding-top: 181px
+		padding-bottom: 80px
+	&__content
+		box-shadow: 2px 4px 25px rgba(3, 3, 3, 0.1)
+		border-radius: 5px
+		border: 2px solid #e45326
+		background-color: #ffffff
+		padding: 20px 15px
+		+rm(1024)
+			padding: 30px
+		+rm(1220)
+			padding: 32px 46px 32px
+	&__img
+		display: flex
+		justify-content: center
+		margin-bottom: 10px
+		position: relative
+		z-index: 0
+		opacity: 0
+		transition: .5s
+		&:before
+			+rm(1024)
+				content: ''
+				position: absolute
+				height: 2px
+				width: 100%
+				position: absolute
+				left: 0
+				top: 56%
+				transform: translateY(-50%) rotate(-7deg)
+				background-color: #df3a08
+				z-index: -1
+			+rm(1220)
+				top: 52%
+				transform: translateY(-52%) rotate(-6deg)
+		+rm(1024)
+			margin-bottom: 0
+		img
+			border-radius: 50%
+			background-color: #f7c3b0
+			border: 8px solid #f7c3b0
+	&__img2
+		transition-delay: .4s
+		&:before
+			+rm(1024)
+				top: 48%
+				transform: translateY(-50%) rotate(-11deg)
+			+rm(1220)
+				top: 44%
+				transform: translateY(-50%) rotate(-20deg)
+				width: 104%
+				left: -4px
+	&__img3
+		transition-delay: .8s
+		&:before
+			+rm(1024)
+				top: 49%
+				transform: translateY(-50%) rotate(-11deg)
+			+rm(1220)
+				top: 51%
+				transform: translateY(-50%) rotate(-11deg)
+	&__img4
+		transition-delay: 1.2s
+		&:before
+			+rm(1024)
+				top: 43%
+				transform: translateY(-50%) rotate(-6deg)
+			+rm(1220)
+				top: 50%
+				transform: translateY(-50%) rotate(-7deg)
+	&__title
+		margin-bottom: 15px
+		+rm(480)
+			margin-bottom: 5px
+		+rm(1024)
+			margin-bottom: 33px
+	&__table
+		+rm(480)
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-start
+		+rm(1024)
+			border-top: 1px solid #d1d1d1
+			position: relative
+		&::before
+			+rm(1024)
+				content: ''
+				position: absolute
+				width: 100%
+				height: 177px
+				top: 34px
+				right: 0
+				background: url(../img/table.svg) no-repeat center / contain
+			+rm(1220)
+				height: 201px
+				top: 39px
+	&__column
+		max-width: 320px
+		width: 100%
+		margin-top: 15px
+		margin-left: auto
+		margin-right: auto
+		+rm(480)
+			max-width: 207px
+		+rm(640)
+			max-width: 278px
+		+rm(768)
+			max-width: 320px
+		+rm(1024)
+			width: 25%
+			max-width: 100%
+			margin-top: 0
+			position: relative
+			z-index: 5
+	&__top
+		border-top: 1px solid #d1d1d1
+		padding-top: 15px
+		+rm(1024)
+			border-right: 1px solid #d1d1d1
+			border-top: none
+			height: 209px
+			position: relative
+		+rm(1220)
+			height: 280px
+		&:before, &:after
+			+rm(1024)
+				content: ''
+				position: absolute
+				top: 0
+				width: 14px
+				height: 14px
+				background-color: #df3a08
+				border-radius: 50%
+		&:before
+			display: none
+			+rm(1024)
+				left: -7px
+		&:after
+			+rm(1024)
+				right: -7px
+		&--first
+			+rm(1024)
+				border-left: 1px solid #d1d1d1
+				padding-top: 110px
+			+rm(1220)
+				padding-top: 174px
+			&:before
+				+rm(1024)
+					display: block
+					top: 162px
+				+rm(1220)
+					top: 222px
+			&::after
+				+rm(1024)
+					top: 135px
+				+rm(1220)
+					top: 196px
+		&--circle2
+			+rm(1024)
+				padding-top: 80px
+			+rm(1220)
+				padding-top: 120px
+			&:after
+				+rm(1024)
+					top: 87px
+				+rm(1220)
+					top: 102px
+		&--circle3
+			+rm(1024)
+				padding-top: 33px
+			+rm(1220)
+				padding-top: 40px
+			&:after
+				+rm(1024)
+					top: 41px
+				+rm(1220)
+					top: 51px
+		&--circle4
+			+rm(1024)
+				padding-top: 0px
+			&:after
+				+rm(1024)
+					top: 15px
+				+rm(1220)
+					top: 17px
+	&__age
+		padding: 10px 20px
+		margin-bottom: 10px
+		font-size: 18px
+		font-weight: 700
+		color: #fff
+		+rm(1024)
+			margin-bottom: 15px
+		&--bg1
+			background-color:  #e2a084
+		&--bg2
+			background-color: #ec774e
+		&--bg3
+			background-color: #e25628
+		&--bg4
+			background-color: #df3a08
+	&__text
+		color: #444444
+		font-size: 16px
+		line-height: noraml
+		padding-right: 0px
+		+rm(1024)
+			padding-right: 15px
+		+rm(1220)
+			padding-right: 25px
+.statistic__img.active
+	opacity: 1

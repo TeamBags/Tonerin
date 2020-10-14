@@ -1,0 +1,106 @@
+.peel
+	+rm(1220)
+		padding: 79px 0 98px
+	&__title
+		margin-bottom: 20px
+		+rm(768)
+			margin-bottom: 30px
+		+rm(1024)
+			margin-bottom: 40px
+		+rm(1220)
+			margin-bottom: 50px
+	&__content
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: 20px
+		+rm(768)
+			justify-content: space-between
+			margin-bottom: 30px
+		+rm(1024)
+			margin-bottom: 60px
+		+rm(1220)
+			margin-bottom: 100px
+	&__box
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.05)
+		border-radius: 5px
+		background-color: #ffffff
+		max-width: 300px
+		padding: 15px
+		+rm(640)
+			margin-left: 5px
+			margin-right: 5px
+		+rm(768)
+			margin: 0
+			padding: 10px
+			max-width: 100%
+			width: 32.7%
+		+rm(1024)
+			padding: 20px
+		+rm(1220)
+			width: 100%
+			max-width: 370px
+		&:not(:last-child)
+			margin-bottom: 10px
+			+rm(768)
+				margin-bottom: 0
+	&-box__icon
+		width: 60px;
+		height: 60px;
+		background-color: #f2f4f6;
+		background-image: linear-gradient(to top, #649f36 0%, #74b444 100%);
+		border-radius: 50%
+		position: relative
+		z-index: 0
+		margin-left: auto
+		margin-right: auto
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: -30px
+		margin-bottom: 5px
+		font-size: 40px
+		font-weight: 700
+		color: #fff
+		+rm(1220)
+			margin-bottom: 12px
+	&-box__text
+		color: #000000;
+		font-size: 16px
+		line-height: 1.2
+		text-align: center
+		+rm(1024)
+			font-size: 18px
+		+rm(1220)
+			font-size: 19px
+			line-height: 26px
+			padding: 0 13px
+	// &__info
+	// 	margin-top: 20px
+	// 	color: #222222
+	// 	font-size: 20px
+	// 	font-weight: 700
+	// 	line-height: 1.1
+	// 	text-align: center
+	// 	padding-bottom: 20px
+	// 	border-bottom: 1px solid #dddddd
+	// 	+rm(480)
+	// 		font-size: 20px
+	// 		line-height: normal
+	// 	+rm(768)
+	// 		font-size: 26px
+	// 		margin-top: 25px
+	// 		padding-bottom: 30px
+	// 	+rm(1024)
+	// 		margin-top: 30px
+	// 		padding-bottom: 40px
+	// 	+rm(1220)
+	// 		font-size: 28px
+	// 		margin-top: 42px
+	// 		line-height: 1
+	// 		padding-bottom: 72px
+
+.peel__box.active
+	.peel-box__icon::before
+		width: 91%
+		height: 91%

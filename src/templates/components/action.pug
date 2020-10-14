@@ -1,0 +1,29 @@
+.action
+	h2.title.action__title Внимание!
+	.action__box
+		h3.action__subtitle Только сегодня 
+			span.date-0.action__subtitle--accent(data-format="dd month") 25 августа   
+			|   
+			span.action__price.text-nowrap  цена:  
+				span.x_price_current 196
+				|  
+				span.x_currency руб
+				span.x_star *
+		.action__pack
+			picture
+				source(srcset="img/prod.webp", type="image/webp")
+				img(src="img/prod.png", alt="image")
+		.action__timer
+			include timer
+	.action__form
+		form(action="/submit", method="POST", class="x_order_form")
+			label.form__input--wrap
+				div.form__input--icon
+					img(src="img/icon_name.png", alt="")
+				input.form__input(placeholder="Мое имя", type="text", requaired="", name="name")
+			label.form__input--wrap
+				div.form__input--icon
+					img(src="img/icon_phone.png", alt="")
+				input.form__input(placeholder="Мой телефон", type="tel", requaired="", name="phone")
+			button.btn.action__btn Оформить заказ
+

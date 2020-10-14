@@ -1,0 +1,44 @@
+.bg-a, .bg-b
+	position: relative
+	z-index: 0
+	&::before
+		+rm(1400)
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 522px
+			height: 704px
+			background: url(../img/bg-heart.png) no-repeat center / contain
+			z-index: -1
+	&::after
+		+rm(1400)
+			content: ''
+			position: absolute
+			top: 0
+			right: -700px
+			width: 1004px
+			height: 100%
+			background: url(../img/bg-cardio.png) no-repeat center / contain
+			z-index: -1
+		+rm(1700)
+			right: -500px
+		+rm(2000)
+			right: -300px
+.bg-b
+	&::before
+		+rm(1400)
+			transform: scaleX(-1)
+			left: auto
+			right: 0
+	&::after
+		+rm(1400)
+			transform: scaleX(-1)
+			right: auto
+			left: -700px
+		+rm(1700)
+			right: auto
+			left: -500px
+		+rm(2000)
+			right: auto
+			left: -300px

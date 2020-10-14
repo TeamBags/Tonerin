@@ -1,0 +1,48 @@
+
+		.timer__text {
+        font-size: 16px;
+        line-height: 18px;
+				color: #444;
+    }
+
+    .timer__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        font-weight: 700;
+
+        span {
+            display: inline-block;
+        }
+    }
+
+     .hours, .minutes, .seconds {
+        padding: 3px 11px;
+				background-color: #e45326;
+        border-radius: 5px;
+				color: #ffffff;
+				font-size: 24px;
+        &:nth-child(2n - 1) {
+          margin-right: 3px;
+        }
+    }
+    
+    .timer__dots {
+        margin: 0 2.5px 1px;
+        color: #000000;
+        opacity: 0.6;
+        font-size: 19px;
+        font-weight: 400;
+    }
+		input:invalid {
+			box-shadow: none;
+		}
+		
+		input:-moz-submit-invalid {
+			box-shadow: none;
+		}
+		
+		input:-moz-ui-invalid {
+			box-shadow:none;
+		}

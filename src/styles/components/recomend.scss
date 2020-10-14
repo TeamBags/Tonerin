@@ -1,0 +1,191 @@
+.recomend {
+	position: relative;
+	@include rm (1220) {
+		padding-top: 80px;
+	}
+
+  &__title {
+		margin-bottom: 20px;
+		@include rm (1024) {
+			text-align: left !important;
+    }
+  }
+  &__content {
+    position: relative;
+    @include rm (1024) {
+      display: flex;
+    }
+  }
+  &__doctor {
+    display: none;
+    @media screen and (max-width: 768px) and (min-width: 640px){
+      position: absolute;
+      width: 170px;
+      right: 70px;
+      bottom: -30px;
+		}
+	  @media screen and (max-width: 1023px) and (min-width: 768px){
+      position: absolute;
+  		width: 180px;
+			bottom: -40px;
+      right: 70px;
+		}
+    @include rm (640) {
+      display: block;
+		}
+	
+    @include rm (1024) {
+      width: 50%;
+			position: relative;
+			margin-right: 20px;
+      &--img {
+        position: absolute;
+        bottom: -60px;
+        left: 0px;
+        z-index: 2;
+			}
+		}
+		@include rm (1220) {
+			
+		  &--img {
+        position: absolute;
+        bottom: -40px;
+       
+			}
+
+		}
+		&:after {
+
+			@include rm (1024) {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: -60px;
+				left: -328px;
+				width: 1000px;
+				height: 956px;
+				background-image: url(../img/recomend_bg.webp);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: bottom center;
+				z-index: -1;
+				opacity: .4;
+			}
+			@include rm (1220) {
+				left: -200px;
+		
+				bottom: -40px;
+	
+			}
+		}
+
+    
+
+  }
+  &__info {
+		font-size: 16px;
+		line-height: 1.2;
+		@include rm(480) {
+			font-size: 18px;
+			line-height: 1.3;
+			}
+    @include rm (1024) {
+      width: 50%;
+      flex-shrink: 0;
+    }
+
+  }
+
+}
+.sign {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 60px;
+    background-color: #c6c6c6;
+  }
+  @include rm (768) {
+    width: 50%;
+  }
+  @include rm (1024) {
+    padding-top: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  @include rm (1220) {
+		padding-top: 50px;
+		width: auto;
+  }
+  &__doctor {
+    width: 100%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    @include rm (640) {
+			width: 100%;
+			margin-right: auto;
+    }
+    @include rm (768) {
+			margin-bottom: 15px;
+			margin-right: 0;
+			display: block;
+			width: 100%;
+		}
+		@include rm (1024) {
+
+			width: auto;
+		}
+		@include rm (1220) {
+			margin-right: 23px;
+			width: auto;
+		}
+    &--name {
+      font-size: 22px;
+      font-weight: 700;
+			margin-bottom: 10px;
+			@include rm (1220) {
+				margin-bottom: 17px;
+			}
+    }
+    &--post {
+      color: #666666;
+      font-size: 16px;
+    }
+
+  }
+
+}
+.bg-text {
+	border-radius: 5px;
+	background-color: #f2f4f6;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: #333333;
+	font-weight: 700;
+	font-style: italic;
+  @include rm (1024) {
+		margin-bottom: 25px;
+		padding: 28px 20px;
+  }
+
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.no-webp .recomend__doctor:after{
+
+	@include rm (1024) {
+		background-image: url(../img/recomend_bg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom center;
+  }
+}

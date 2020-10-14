@@ -1,0 +1,37 @@
+section.promo.block.bg-a
+  .container
+    .promo__content
+      .promo__product
+        picture
+          <source media="(max-width: 1219px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+          source(srcset="img/man.webp", type="image/webp")
+          img(src="img/man.png", alt="man", class="man")
+        .product-wrap.animation-pack
+          picture
+            source(srcset="img/prod.webp", type="image/webp")
+            img(src="img/prod.png", alt="prod", class="product-image")
+          .medal.animation-medal
+            img(src="img/quality3.png", alt="")
+      ul.promo__quality
+        li.promo__quality--item
+          img(src="img/quality1.png", alt="prod", class="quality")
+          span Рекомендован Российским кардиологическим обществом
+        li.promo__quality--item
+          img(src="img/quality2.png", alt="prod", class="quality")
+          span Натуральный <br> состав
+      .promo__description
+        .promo__title
+          h1 Тонерин
+          h2.title Омоложение сосудов и&nbsp;стабилизация давления
+        ul.promo__list
+          li.promo__list--item
+            h6 укрепляет сосуды и возвращает им&nbsp;эластичность
+            p предупреждая появление гипертонии
+          li.promo__list--item
+            h6 нормализует артериальное давление
+            p избавляя от головной боли, головокружения и слабости
+          li.promo__list--item
+            h6 снижает уровень холестерина
+            p предупреждая образования тромбов
+      .promo__form
+        include form

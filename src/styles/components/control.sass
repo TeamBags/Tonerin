@@ -1,0 +1,117 @@
+.control
+	overflow: hidden
+	+rm(1220)
+		padding: 88px 0 100px
+	+rm(1400)
+		&::before
+			opacity: .5
+			+rm(2300)
+				opacity: 1
+		&::after
+			+rm(1400)
+				top: -100px
+				right: -500px !important
+			+rm(1600)
+				right: -400px !important
+			+rm(1833)
+				right: -250px !important
+	&__info
+		margin-bottom: 15px
+		+rm(1024)
+			max-width: 600px
+			margin-bottom: 0
+			margin-right: 10px
+		+rm(1220)
+			max-width: 700px
+	&__title
+		margin-bottom: 15px
+		br
+			display: none
+			+rm(1220)
+				display: block
+		+rm(1024)
+			text-align: left !important
+		+rm(1220)
+			margin-bottom: 22px
+			max-width: 520px
+	&__first
+		+rm(1024)
+			display: flex
+			border-bottom: 1px solid #d5d5d5
+			padding-bottom: 40px
+			margin-bottom: 10px
+		+rm(1220)
+			margin-bottom: 10px
+			padding-bottom: 60px
+	&__text
+		color: #444444
+		font-size: 16px
+		line-height: 1.2
+		text-align: center
+		+rm(480)
+			font-size: 18px
+		+rm(1024)
+			text-align: left
+			line-height: 1.3
+		+rm(1220)
+			max-width: 635px
+			line-height: 28px
+		b
+			font-weight: bold
+			color: #222
+		span
+			font-weight: bold
+		&:not(:last-child)
+			margin-bottom: 10px
+			+rm(1220)
+				margin-bottom: 20px
+	&__box
+		width: 300px
+		height: 225px
+		
+		border-radius: 5px;
+		position: relative
+		margin-left: auto
+		margin-right: auto
+		img
+			box-shadow: 2px 4px 25px rgba(3, 3, 3, 0.1);
+		background: url(../img/control.webp) no-repeat center / contain
+		+rm(480)
+			width: 330px
+			height: 248px
+		+rm(640)
+			width: 370px
+			height: 275px
+		+rm(1220)
+			margin-top: 11px
+			margin-right: 0
+			width: 470px
+			height: 343px
+	&-box__logo 
+		position: absolute
+		left: 10px
+		bottom: 10px
+		padding-left: 60px
+		width: 160px
+		height: 60px
+		color: #df3a08
+		font-size: 20px
+		font-weight: 700
+		line-height: 1
+		background-color: #fff
+		border-radius: 5px
+		display: flex
+		align-items: center
+		&::before
+			content: ''
+			position: absolute
+			left: 8px
+			top: 50%
+			transform: translateY(-50%)
+			background: url(../img/logo.png) no-repeat center / contain
+			width: 45px
+			height: 45px
+
+.no-webp
+	.control__box
+		background: url(../img/control.jpg) no-repeat center / contain

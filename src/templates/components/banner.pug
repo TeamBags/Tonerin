@@ -1,0 +1,19 @@
+.banner
+	.container
+		.banner__content
+			.banner__pack
+				picture
+					source(media="(max-width: 1023px)", srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==")
+					source(srcset="img/prod.webp", type="image/webp")
+					img(src="img/prod.png", alt="image")
+			.banner__title Внимание! 
+				span.banner__title--small Только сегодня 
+					span.date-0.text-nowrap.banner__title--accent(data-format="dd month")
+			.banner__price.text-nowrap цена:
+				span.x_price_current 196
+				|  
+				span.x_currency руб
+				span *
+			.banner__timer
+				include timer
+			button.banner__btn.btn.ever-popup-btn Оформить заказ

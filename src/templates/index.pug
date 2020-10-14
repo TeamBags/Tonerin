@@ -1,0 +1,35 @@
+extends settings/layout
+
+prepend html
+  - const lang = "ru";
+
+prepend head
+  - const pageTitle = "Купить Тонерин недорого. Цены, отзывы. Закажите Тонерин сейчас!";
+  - const themeColor = "#ffffff";
+
+append head
+
+append content
+  include components/header
+  include components/promo
+  include components/statistic
+  include components/illness
+  include components/innovation
+  include components/control
+  include components/composition
+  include components/peel
+  include components/study
+  include components/certificates
+  include components/recomend
+  include components/reviews.html
+  include components/use
+  include components/order
+  include components/fake
+  include components/promo
+  include components/popup
+  include components/banner
+  include components/footer.html
+  include components/svg-sprites.html
+append scripts
+  script(src="https://179523.selcdn.ru/public/prod-scripts/cis_footer.js")
+  script(defer src="https://179523.selcdn.ru/public/delivery-banner/banner.js")

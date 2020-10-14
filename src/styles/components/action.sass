@@ -1,0 +1,200 @@
+.action
+	padding-top: 25px
+	+rm(480)
+		padding-top: 30px
+	+rm(768)
+		padding-top: 40px
+	+rm(640)
+		position: relative
+		max-width: 580px
+		margin-left: auto
+		margin-right: auto
+	+rm(1024)
+		max-width: 760px
+		margin-right: 0
+		padding-bottom: 20px
+		padding-top: 50px
+		width: 100%
+	+rm(1220)
+		max-width: 900px
+		padding-top: 54px
+		width: 100%
+	&__title
+		margin-bottom: 10px
+		+rm(640)
+			margin-bottom: 0
+		+rm(1024)
+			width: 100%
+			text-align: left !important
+			margin-bottom: 0
+		+rm(1220)
+			margin-bottom: -19px
+	&__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		+rm(640)
+			display: block
+		+rm(1024)
+			display: flex
+			flex-direction: row
+	&__subtitle 
+		color: #000000
+		font-size: 18px
+		font-weight: 400
+		text-align: center
+		margin-bottom: 10px
+		order: 2
+		max-width: 293px
+
+		+rm(640)
+			margin-bottom: 15px
+			font-size: 20px
+			max-width: 100%
+			order: inherit
+		+rm(1024)
+			margin-bottom: 15px
+		+rm(1220)
+			font-size: 22px
+			margin-bottom: 25px
+		&--accent
+			color: #df3a08
+			font-weight: 700
+	&__price
+		font-weight: 700
+		+rm(1220)
+			font-size: 17px
+			margin-left: 10px
+		.x_price_current
+			letter-spacing: -1.1px
+			font-weight: 700
+			font-size: 56px
+		.x_currency
+			font-size: 20px
+	&__timer
+		text-align: center
+		margin-bottom: 30px
+		+rm(640)
+			max-width: 300px
+			margin-bottom: 15px
+			margin-left: auto
+		+rm(1024)
+			max-width: 268px
+			width: 100%
+		+rm(1220)
+			max-width: 375px
+			width: 100%
+			position: relative
+			top: -10px
+			margin-bottom: 0px
+			margin-top: 20px
+			display: flex
+			align-items: center
+		.timer__text
+			margin-bottom: 5px
+			color: #222
+			+rm(1220)
+				margin-bottom: 0px
+				margin-right: 15px
+				font-size: 14px
+				text-align: left
+				max-width: 115px
+	&__pack
+		max-width: 375px
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 15px
+		position: relative
+		left: 10px
+		order: 1
+		+rm(640)
+			position: absolute
+			bottom: -15px
+			left: 0-15px
+			margin-bottom: 0
+			max-width: 312px
+		+rm(1024)
+			left: -232px
+			bottom: 16px
+			max-width: 240px
+		+rm(1220)
+			max-width: 317px;
+			left: -295px;
+			bottom: 16px;
+		+rm(1300)
+			max-width: 339px
+			left: -318px
+			bottom: 12px
+		&:before
+			content: ''
+			position: absolute
+			width: 96px
+			height: 70px
+			background: url(../img/quality1.webp) no-repeat center / contain
+			top: -16px
+			right: 11px
+			+rm(640)
+				top: -49px;
+				right: 20px;
+				width: 101px;
+				height: 91px;
+			+rm(1024)
+				right: 13px
+				top: -64px
+			+rm(1220)
+				width: 87px
+				height: 87px
+				right: 27px
+				top: -42px
+
+
+	&__form
+		max-width: 300px
+		margin-left: auto
+		margin-right: auto
+		+rm(640)
+			margin-right: 0
+		+rm(1024)
+			max-width: 100%
+		.form__input--wrap
+			margin-bottom: 10px
+			+rm(1024)
+				margin-bottom: 0
+				margin-right: 10px
+			+rm(1220)
+				margin-right: 25px
+				width: 275px
+		form
+			+rm(1024)
+				display: flex
+	&__btn
+		font-size: 22px
+		position: relative
+		margin-bottom: 20px
+		+rm(1024)
+			max-width: 267px
+			margin-bottom: 0
+			padding: 17px 0;
+		+rm(1220)
+			max-width: 300px
+		&::before
+			content: '*при оформлении заказа'
+			position: absolute
+			bottom: -20px
+			font-size: 14px
+			text-align: center
+			color: #333
+			font-weight: 400
+			left: 0
+			width: 100%
+	.timer__dots
+		color: #000
+		margin: 0 1.5px 1px
+		+rm(1220)
+			margin: 0 2.5px 1px;
+.no-webp .action__pack:before
+	background: url(../img/quality1.png) no-repeat center/contain;
+.recomend__action
+	padding-top: 0 !important
+	background-color: #f2f4f6
+	
